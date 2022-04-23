@@ -1,4 +1,5 @@
 
+import Day19DocumentReading.saveRawFiles
 import GutenbergUtil.{getAuthor, getTitle}
 
 import java.time.LocalDateTime
@@ -35,7 +36,7 @@ object Day19Excercise  extends App{
   def saveTitle(files:String, dstpath1:String = "", folder:String = "src/resources/texts/"):Unit= {
     val filePath =  "src/resources/websites2.txt"
     val fileLines = Util.getLinesFromFile(filePath)
-    //val rawFiles:Array[String] = saveRawFiles(fileLines:Array[String]):Unit
+    val rawFiles:Array[String] = saveRawFiles(fileLines:Array[String]):Unit
     val files = Util.getListOfFiles(tempFolder)
     for (file <- files) yield {
       val rows = Util.getLinesFromFile("src/resources/temp")
