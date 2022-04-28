@@ -66,5 +66,5 @@ object Day22ParsingXML extends App {
   //TODO get all distinct authors in alphabetical order
   val author=bookUnits.map(_.author).distinct
   println("Distinct authors:")
-  author.foreach(println)
+  author.sorted.foreach(println)
 }
