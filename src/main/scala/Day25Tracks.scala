@@ -46,7 +46,6 @@ object Day25Tracks extends App {
       resultSet.getInt("Milliseconds"),
       resultSet.getInt("Bytes"),
       resultSet.getInt("UnitPrice"))
-
     trackBuffer+=tracks
     println()
   }

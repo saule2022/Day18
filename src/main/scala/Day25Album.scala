@@ -7,7 +7,6 @@ object Day25Album extends App{
   //TODO Create Album Case Class with appropriate data types for each field
   //TODO connect to chinook and extract into Array of Album (using ArrayBuffer to build it up)
 
-
   //Extra Challenge
   //TODO save all Tracks into CSV - in src/resources/csv/tracks.csv -
   // results should be very similar or identical to what you get in DBeaver export CSV - tracks_exported.csv
