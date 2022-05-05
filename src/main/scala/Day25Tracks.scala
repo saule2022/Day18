@@ -5,7 +5,7 @@ import java.sql.DriverManager
 case class Tracks(TrackID:Int, Name:String,
                  AlbumId:Int, MediaTypeId:String,
                   GenreId:Int, Composer:String,  Milliseconds:Int,
-                  Bytes:Int, UnitPrice:Int)
+                  Bytes:Int, UnitPrice:Double)
 
 object Day25Tracks extends App {
   //TODO Create Track Case Class
@@ -45,7 +45,7 @@ object Day25Tracks extends App {
       resultSet.getInt("GenreId"),resultSet.getString("Composer"),
       resultSet.getInt("Milliseconds"),
       resultSet.getInt("Bytes"),
-      resultSet.getInt("UnitPrice"))
+      resultSet.getDouble("UnitPrice"))
     trackBuffer+=tracks
     println()
   }
